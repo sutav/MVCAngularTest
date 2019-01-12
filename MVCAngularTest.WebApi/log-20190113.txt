@@ -1,0 +1,13 @@
+2019-01-13 09:10:24.788 +11:00 [Error] PalindrtomeController.GetPalindrtomes :: Unhandled exception
+System.InvalidOperationException: No connection string named 'ORPDataContext' could be found in the application config file.
+   at System.Data.Entity.Internal.LazyInternalConnection.get_ConnectionHasModel()
+   at System.Data.Entity.Internal.LazyInternalContext.InitializeContext()
+   at System.Data.Entity.Internal.InternalContext.Initialize()
+   at System.Data.Entity.Internal.InternalContext.GetEntitySetAndBaseTypeForType(Type entityType)
+   at System.Data.Entity.Internal.Linq.InternalSet`1.Initialize()
+   at System.Data.Entity.Internal.Linq.InternalSet`1.GetEnumerator()
+   at System.Data.Entity.Infrastructure.DbQuery`1.System.Collections.Generic.IEnumerable<TResult>.GetEnumerator()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at MVCAngularTest.BusinessLogic.PalindromeManager.GetPalindromeList() in C:\_Repositories\Test\MVCAngularTest.BusinessLogic\PalindromeManager.cs:line 21
+   at MVC_Angular_Test.Controllers.PalindromeController.GetPalindromes() in C:\_Repositories\Test\MVCAngularTest.WebApi\Controllers\Palindrome.Controller.cs:line 29

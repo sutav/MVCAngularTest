@@ -3,9 +3,9 @@
   <p class="lead">Enter any word to check if it a palindrome and view saved palindrome words.</p>
 
   <div class="row">
-    <app-palindrome-edit ></app-palindrome-edit>
+    <app-palindrome-edit (palindromeVerified)="reloadPalindromes($event)"></app-palindrome-edit>
   </div>
   <div class="row">
-    <app-palindrome-list ></app-palindrome-list>
+    <app-palindrome-list #list></app-palindrome-list>
   </div>
 </div>

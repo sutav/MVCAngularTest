@@ -15,7 +15,7 @@ namespace MVCAngularTest.DataAccess
         {
             Database.SetInitializer<MVCAngularTestDataContext>(null);
         }
-       
+        public virtual DbSet<Palindrome> Palindromes { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
  

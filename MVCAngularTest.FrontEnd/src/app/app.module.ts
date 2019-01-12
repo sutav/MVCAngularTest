@@ -7,6 +7,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { PalindromeListComponent } from './palindrome/palindrome-list/palindrome-list.component';
 import { PalindromeEditComponent } from './palindrome/palindrome-edit/palindrome-edit.component';
 import { PalindromeComponent } from './palindrome/palindrome.component';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { PalindromeComponent } from './palindrome/palindrome.component';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

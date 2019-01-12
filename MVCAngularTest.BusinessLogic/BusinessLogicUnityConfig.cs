@@ -1,5 +1,7 @@
 ﻿using MVCAngularTest.BusinessLogic;
 using MVCAngularTest.BusinessLogic.Log;
+using MVCAngularTest.Core;
+using MVCAngularTest.DataAccess;
 using ORP.BusinessLogic;
 using Serilog;
 using System;
@@ -22,6 +24,9 @@ namespace MVCAngularTest.BusinessLogic
                   .CreateLogger();
                 return log;
             }));
+            string connectionStringName = "name=MVCAngularTestContext";
+            container.RegisterType<IUnitOfWork, UnitOfWork>(new InjectionConstructor(connectionStringName));
+            container.RegisterType(typeof(IRepository<>), typeof(GenericRepository<>));
             container.RegisterType<ILogManager, LogManager>();
             container.RegisterType<IPalindromeManager, PalindromeManager>();
          
