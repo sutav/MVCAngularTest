@@ -1,0 +1,6 @@
+C:\_Repositories\Test\MVCAngularTest.WebModel\bin\Debug\MVCAngularTest.WebModel.dll
+C:\_Repositories\Test\MVCAngularTest.WebModel\bin\Debug\MVCAngularTest.WebModel.pdb
+C:\_Repositories\Test\MVCAngularTest.WebModel\obj\Debug\MVCAngularTest.WebModel.csproj.CoreCompileInputs.cache
+C:\_Repositories\Test\MVCAngularTest.WebModel\obj\Debug\MVCAngularTest.WebModel.dll
+C:\_Repositories\Test\MVCAngularTest.WebModel\obj\Debug\MVCAngularTest.WebModel.pdb
+C:\_Repositories\Test\MVCAngularTest.WebModel\obj\Debug\MVCAngularTest.WebModel.csprojAssemblyReference.cache
